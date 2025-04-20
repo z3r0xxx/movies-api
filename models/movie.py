@@ -22,5 +22,3 @@ class Movie(Base):
     tmdb_id = Column(Integer, default=0)  # ID на TMDB
     created_at = Column(TIMESTAMP, server_default=func.now())  # Время создания
     updated_at = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())  # Время обновления
-
-
