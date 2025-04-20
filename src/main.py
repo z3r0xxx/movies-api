@@ -12,8 +12,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/check")
-async def _check(request: Request):
+@app.get("/status")
+async def _status(request: Request):
     return {
         "status": "All good"
     }
